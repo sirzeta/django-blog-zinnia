@@ -6,13 +6,13 @@ import mptt.fields
 import tagging.fields
 
 import zinnia.models_bases.entry
-from zinnia.migrations import user_model_label
+from zinnia.migrations import user_model_label, user_app_label
 
 
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('auth', '0001_initial'),
+        (user_app_label, '0001_initial'),
         ('sites', '0001_initial'),
     ]
 
